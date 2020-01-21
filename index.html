@@ -1,8 +1,149 @@
-<!doctype html>
-<html lang="en">
+<DOCTYPE! html>
+<html lang="en-us">
 <head>
-<link rel="stylesheet" href="stylesheet.css">
- <h1>hi</h1> 
- </head>
- </body>
-</html>
+        <title>Home</title>
+        <link rel="stylesheet" href= "stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            justify-self:center;
+        }
+.container {
+    display:grid;
+    grid-template-columns:1fr;
+    grid-auto-rows:minmax(100px, auto);
+    max-width:1200px;
+    margin:0 auto;
+    grid-gap:1em;
+    grid-template-areas:
+        "header"
+        "search"
+        "nav"
+        "location"
+        "cart"
+        "aside"
+        "main"
+        "product1"
+        "product2"
+        "product3"
+        "product4"
+        "product5"
+        "product6"
+        "footer"
+        ;
+        }
+        
+@media only screen and (min-width:620px) {
+ .container {
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:1em;
+    grid-template-areas:
+        "header header search search search search"
+        "nav nav nav nav nav nav"
+        "location location location cart cart cart"
+        "aside aside main main main main"
+        "product1 product1 product1 product2 product2 product2"
+        "product3 product3 product3 product4 product4 product4"
+        "product5 product5 product5 product6 product6 product6"
+        "footer footer footer footer footer footer"
+        ;   
+}   
+}
+@media only screen and (min-width:900px) {
+.container {
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:1em;
+    grid-template-areas:
+        "header header header search search search search search search search search search"
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        "location location location location location location cart cart cart cart cart cart"
+        "aside aside aside main main main main main main main main main"
+        "product1 product1 product1 product1 product2 product2 product2 product2 product3 product3 product3 product3"
+        "product4 product4 product4 product4 product5 product5 product5 product5 product6 product6 product6 product6"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+        ;
+}
+}
+    </style>
+</head>
+<body>
+<div class="container">
+<header>
+<img src="images/logo.jpg" alt="logo" width="125px" height="125px">
+</header>
+<nav>
+    <ul>
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <li>
+        <a href="product1.html">Sunglasses</a>
+    </li>
+    <li>
+        <a href="product2.html">Necklaces</a>
+    </li>
+    <li>
+        <a href="policy.html">Privacy/Security Policy</a>    
+    </li>
+    </ul>
+</nav>
+<div class="search">
+    <div class="topnav">
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+</div>
+<div class="location">
+    <img src="images/location.jpg" alt="Location">
+    <p>2035 E Market St<br>
+Harrisonburg, VA 22801</p>
+</div>
+<div class="cart">
+<img src="images/cart.jpg" alt="cart">
+<h2>My cart</h2>
+</div>
+<aside>
+    <h2><em>Simple Mark</em> strives to provide customers with new, popular clothing and accessories to keep your wardrobe on trend.</h2>
+</aside>
+<main>
+    <img src="images/fashion.jpg" alt="Model">
+</main>
+<div class="product1">
+    <a href="product1.html" src="images/sunglasses1.jpg">
+        <img src="images/sunglasses1.jpg" width="250px" height="300px" alt="sunglasses"></a>
+    <h2>Sunglasses</h2>
+</div>
+<div class="product2">
+    <a href="product2.html" src="images/necklaces1.jpg">
+        <img src="images/necklace1.jpg" width="250px" height="300px" alt="necklaces"></a>
+    <h2>Necklaces</h2>
+</div>
+<div class="product3">
+    <img src="images/scarf.jpg" alt="scarf" width="250px" height="300px">
+    <h2>Scarves</h2>
+</div>
+<div class="product4">
+    <img src="images/earrings.jpg" alt="earrings" width="250px" height="300px">
+    <h2>Earrings</h2>
+</div>
+<div class="product5">
+    <img src="images/shoes.jpg" alt="shoes" width="250px" height="300px">
+    <h2>Shoes</h2>
+</div>
+<div class="product6">
+    <img src="images/dress.jpg" alt="dress" width="250px" height="300px">
+    <h2>Dresses</h2>
+</div>
+<footer>
+    <p>Copyright &#169; 2018 Simple Mark Inc.<br>simplemark&#64;rileywolk.com</p>
+</footer>
+</div>
+</body>
