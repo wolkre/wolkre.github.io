@@ -1,0 +1,58 @@
+#title {
+    text-align: center;
+}
+.fa-fist-raised {
+    color:pink;
+    font-size: 100px;
+    text-align: center;
+    float: center;
+    padding-bottom: 20px;
+}
+.cpic {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.text-center {
+    text-align:center;
+}
+.tpic {
+    width: 300px;
+    height:300px;
+}
+h1 {
+    text-align: left;
+}
+h2 {
+    text-align:center;
+    color: pink;
+}
+
+.container {
+    text-align: center;
+}
+img {
+    padding-bottom: 15px;
+    align-content: center;
+}
+.row {
+    padding-bottom: 15px;
+}
+.logo {
+    width: 150px;
+    height: 100px;
+}
+.navv {
+    padding-top: 40px;
+    font-size: 20px;
+}
+.nav-link{
+    color: pink;
+}
+.nav-link active {
+    color:blue;
+}
+.embed-responsive-16by9::before {
+  padding-top: 0 !important;
+}
+
